@@ -2,19 +2,19 @@ import s from "./Profile.module.css";
 
 const Profile = ({ image, name, tag, location, stats }) => {
     return (
-        <div>
+        <div className={s.profile}>
             <div>
-                <img src={image} alt="User avatar" />
-                <p>{name}</p>
-                <p>@{tag}</p>
-                <p>{location}</p>
+                <img className={s.avatar} src={image} alt="User avatar" />
+                <p className={s.name}>{name}</p>
+                <p className={s.tag}>@{tag}</p>
+                <p className={s.location}>{location}</p>
             </div>
-            <ul>
-                <li>
+            <ul className={s.stats}>
+                <li className={s.container}>
                     <span>Followers</span>
                     <span>{stats.followers}</span>
                 </li>
-                <li>
+                <li >
                     <span>Views</span>
                     <span>{stats.views}</span>
                 </li>
