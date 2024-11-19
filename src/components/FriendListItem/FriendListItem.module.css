@@ -30,3 +30,7 @@
 .status.offline {
     color: red;
 }
+
+.name {
+    color: #223440;
+}

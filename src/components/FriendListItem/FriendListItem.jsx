@@ -9,7 +9,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
         width="48"
         className={s.avatar}
       />
-      <p>{name}</p>
+      <p className={s.name}>{name}</p>
       <p
         className={`${s.status} ${
           isOnline ? s.online : s.offline
